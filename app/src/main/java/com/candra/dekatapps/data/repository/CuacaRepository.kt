@@ -19,4 +19,14 @@ class CuacaRepository constructor(
         }
     }
 
+    fun deleteDataCuaca(id: String) : LiveData<Result<CuacaResponse>> = liveData{
+        emit(Result.Loading)
+        try {
+            val data = apiService.deleteDataCuaca(id)
+            emit(Result.Success(data))
+        } catch (e: Exception) {
+            emit(Result.Error(e.message ?: "Error Occurred!"))
+        }
+    }
+
 }

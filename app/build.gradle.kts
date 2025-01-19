@@ -65,7 +65,7 @@ dependencies {
     implementation(libs.gson)
     implementation(libs.coroutines)
     implementation(libs.coroutines.core)
-    implementation(libs.swipeRefreshLayout)
+//    implementation(libs.accompanist.swipetodismiss)
 
     implementation(libs.lifecycle.viewmodel.compose)
     implementation(libs.lifecycle.livedata.ktx)
