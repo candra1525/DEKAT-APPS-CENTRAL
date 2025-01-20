@@ -148,6 +148,12 @@ fun AppsName(
                         fontSize = 18.sp
                     )
                 )
+                Spacer(modifier = Modifier.padding(4.dp))
+                Text(
+                    text = "Dibuat oleh Candra - Universitas MDP", style = MaterialTheme.typography.bodyMedium.copy(
+                        textAlign = TextAlign.Start, fontSize = 12.sp, fontWeight = FontWeight.Bold
+                    )
+                )
             }
 
             // Tombol refresh
